@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&display=swap');
+
+.bg-sena{
+    background: #6af9f6;
+}
+nav{
+    position: fixed !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+nav .container .navbar-brand img{
+    max-width: 70px;
+    max-height: 70px;
+}
+nav .container .navbar-collapse ul{
+    display: flex;
+    align-items: center;
+}
+
+nav .container .navbar-collapse ul li{
+    list-style: none;
+}
+
+nav .container .navbar-collapse ul li a{
+    margin: 0 20px;
+    transition: .3s;
+    color: rgb(4, 0, 12);
+    font-weight: 400;
+    padding: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+}
+
+nav .container .navbar-collapse ul li:not(.login) a:hover{
+    color: rgb(3, 22, 118);
+    font-size: 20px;
+    border-bottom: 2px solid #fff;
+}
+
+.login{
+    background: rgb(20, 206, 223);
+    transition: .4s;
+    border-radius: 5px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.login:hover{
+    background: #2c9fc6;
+}
+
+.login:hover a{
+    color: #fff !important;
+}
+
+.hero{
+    width: 100%;
+    background: url("../img/imgHeader.jpg");
+    background-size: cover;
+    padding: 240px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.hero h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+    position: relative;
+    left: -100%;
+    animation: slide-in 0.5s forwards;
+}
+
+@keyframes slide-in {
+    to{
+        left: 0;
+    }
+}
+
+.hero h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+    color: rgba(248, 248, 248, 0.892);
+    position: relative;
+    left: -100%;
+    animation: slide-in 1s forwards;
+}
+
+
+.hero p{
+    font-family: 'Dosis', sans-serif;
+    font-size: 22px;
+    position: relative;
+    left: -100%;
+    animation: slide-in 0.5s forwards;
+}
+
+#motivate{
+    width: 100%;
+    position: relative;
+    padding: 50px 0;
+    margin-bottom: 80px;
+}
+
+#motivate h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+#motivate h2 span{
+    color: #6af9f6;
+}
+
+#motivate h5{
+    font-family: 'Josefin Sans', sans-serif;
+    transition: .5s;
+}
+
+#motivate p{
+    font-size: 13px;
+    font-family: 'Dosis', sans-serif;
+    transition: .5s;
+}
+
+#motivate .carousel-item{
+    margin-bottom: 25px;
+    box-shadow: 3px 3px 3px #888888;
+}
+
+#motivate .carousel-item::after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    content: "";
+    background: #ff99001a;
+    transition: .5s;
+}
+#motivate .carousel-item:hover h5{
+    color: #31fa7a;
+    font-size: 30px;
+    -webkit-text-stroke: 1px #000;
+}
+
+#motivate .carousel-item:hover p{
+    font-size: 17px;
+}
+
+#motivate .carousel-item:hover::after{
+    background: rgba(105, 163, 245, 0.314);
+}
+
+#Servicios{
+    width: 100%;
+    position: relative;
+    padding: 170px 0;
+    background: #e9e9e9d6;
+}
+
+#Nosotros{
+    width: 100%;
+    position: relative;
+    padding: 170px 0;
+}
+
+#Nosotros img{
+    width: 80%;
+    display: block;
+    margin: 0 auto 25px auto;
+
+}
+
+#Nosotros h1{
+    color: #2396bd;
+    font-size: 50px;
+    font-weight: 800;
+    border-bottom: 2px solid rgb(135, 135, 135);
+    display: inline-block;
+    margin-bottom: 60px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#Nosotros a{
+    padding: 14px 40px;
+    background: #1fbfc2;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    max-width: 200px;
+    margin-top: 70px;
+    transition: .5s;
+}
+
+#Nosotros p{
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+}
+
+#Nosotros a:hover{
+    background: #020480;
+}
+
+
+#Servicios{
+    width: 100%;
+    position: relative;
+    padding: 130px 0;
+}
+
+#Servicios h2{
+    color: #000000;
+    font-size: 36px;
+    display: inline-block;
+    margin-bottom: 70px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#Servicios h2 span{
+    color: #34d3d6;
+}
+
+#Servicios .card-servicio{
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+#Servicios .row .infoPaquete{
+    padding: 25px;
+}
+#Servicios .row .infoPaquete h2{
+    color: #267bd0;
+    margin-bottom: 15px;
+}
+
+#Servicios .row img{
+    border-radius: 7px;
+    box-shadow: 7px 7px 7px #888888;
+}
+#Servicios .row .infoPaquete p{
+    font-family: 'Dosis', sans-serif;
+}
+#Servicios .row .infoPaquete span{
+    color: #31afd8;
+}
+#Servicios .row{
+    justify-content: center;
+    text-align: left;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #90fade;
+}
+
+/* comentarios */
+#Comentarios{
+    width: 100%;
+    position: relative;
+    padding: 10px 0;
+    background: #adf9f640;
+}
+
+#Comentarios span{
+    color:#2396bd ;
+}
+
+#Comentarios h2{
+    color: #000000;
+    font-size: 30px;
+    display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#Comentarios .card-servicio{
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#Comentarios .card-servicio .persona{
+    text-align: start;
+}
+
+#Comentarios .row .infoPaquete{
+    padding: 25px;
+    text-align: center;
+}
+#Comentarios .row .infoPaquete h2{
+    color: #267bd0;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+#Comentarios .row img{
+    border-radius: 7px;
+    box-shadow: 7px 7px 7px #888888;
+    max-height: 200px;
+    max-width: 50%;
+    border-radius: 50%;
+}
+#Comentarios .row span img{
+    border-radius: 0;
+    max-height: 25px;
+}
+
+#Comentarios .row .infoPaquete p{
+    font-family: 'Dosis', sans-serif;
+}
+#Comentarios .row .infoPaquete span{
+    color: #31afd8;
+}
+#Comentarios .row{
+    justify-content: center;
+    text-align: left;
+}
+
+/* Vuelos */
+#vuela{
+    width: 100%;
+    position: relative;
+    padding: 80px 0;
+    background: #e9e9e9d6;
+    text-align: center;
+}
+#vuela h2{
+    color: #589eff;
+    font-size: 36px;
+    display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#vuela .row{
+    justify-content: center;
+}
+
+#vuela label{
+    color: #595959;
+    font-family: 'Dosis', sans-serif;
+    font-size: 24px;}
+
+#vuela .lupa img{
+    border: 0;
+    margin-top: 15px;
+    width: 45px;
+    transition: .4s;
+}
+
+#vuela .lupa img:hover{
+    background: #1fbfc2;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+/* Contacto */
+#Contacto{
+    width: 100%;
+    position: relative;
+    padding: 80px 0;
+    background: #ffffff;
+    text-align: center;
+}
+
+#Contacto form{
+    align-items: center;
+    margin-bottom: 15px;
+}
+#Contacto input, textarea{
+    max-width: 80%;
+    margin: 0 auto;
+    border:none;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+    background: #adf9f600;
+    margin-bottom: 25px;
+}
+#Contacto h2{
+    color: #589eff;
+    font-size: 36px;
+    display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#Contacto p{
+    margin-bottom: 35px;
+    font-family: 'Dosis', sans-serif;
+}
+#Contacto button{
+    padding: 5px 55px;
+    font-family: 'Dosis', sans-serif;
+}
+#Contacto .row{
+    justify-content: center;
+}
+#Contacto .infoContacto{
+    background: #adf9f640;
+    padding-top: 35px;
+    border-radius: 15px;
+}
+#Contacto .infoContacto i{
+    font-size: 20px;
+}
+
+#Contacto label{
+    color: #595959;
+    font-family: 'Dosis', sans-serif;
+    font-size: 24px;
+}
+
+/* footer */
+
+footer{
+    background: #242424;
+    color: #fff;
+    text-align: center;
+}
+
+footer .fila1{
+    background: #353535;
+    padding: 8px;
+}
+footer .fila1 p{
+    padding: 0;
+}
+footer span{
+    color: #4e4e4e;
+}
+footer .fila1 span{
+    color: #007ce1;
+    font-weight: 700;
+}
+footer .red img{
+    margin: 0 5px;
+    max-width: 25px;
+    position: relative;
+    top: -15px;
+}
+footer .row p{
+    margin: 0;
+}
+
+
+
+@media (max-width:768px) {
+    .hero{
+        display: none;
+    }
+    #motivate h2{
+        margin-top: 120px;
+    }
+    #Comentarios .card-servicio .persona {
+        text-align: center;
+    }
+    #Comentarios .row .infoPaquete{
+        text-align: center;
+    }
+}
+
+@media (max-width:995px){
+    .login{
+        margin-left: 0;
+    }
+    #Nosotros .nosotro{
+        text-align: center;
+    }
+
+    #Nosotros .nosotro a{
+        margin: 55px auto;
+    }
+    footer .fila1{
+        justify-content: center;
+    }
+}
